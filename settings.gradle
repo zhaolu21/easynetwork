@@ -1,0 +1,5 @@
+include ':mylibrary'
+include ':app:mylibrary'
+include ':app'
+project(':mylibrary').projectDir = new File(rootDir, 'app/mylibrary/')
+rootProject.name = "easynetwork"
